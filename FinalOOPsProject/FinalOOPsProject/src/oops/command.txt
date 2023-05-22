@@ -1,0 +1,13 @@
+pendown
+forward 120
+turnright 90
+penup
+backward 120
+turnleft 90
+green
+pendown
+backward 120
+clear
+reset
+about
+clear
