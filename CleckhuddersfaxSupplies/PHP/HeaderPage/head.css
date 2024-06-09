@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --orange: #ff7800;
+    --dark-color: #FF8C00;
+    --black: #000000;
+    --light-color: #666;
+    --border: .2rem solid rgba(0, 0, 0, .1);
+    --border-hover: .1rem solid var(--black);
+    --box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+    transition: width none;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 5rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: var(--black);
+}
+
+.header .header-1 {
+    background: var(--orange);
+    padding: 3rem 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .header-1 img {
+    height: 5rem;
+}
+
+.header .header-1 .search-form {
+    width: 70rem;
+    height: 5rem;
+    border: var(--border);
+    overflow: hidden;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    border-radius: .5rem;
+}
+
+.header .header-1 .search-form input {
+    font-size: 1.6rem;
+    padding: 0 1.2rem;
+    height: 100%;
+    width: 100%;
+    text-transform: none;
+    color: var(--black);
+}
+
+.header .header-1 .search-form label {
+    font-size: 2.5rem;
+    padding-right: 1.5rem;
+    color: var(--black);
+    cursor: pointer;
+}
+
+.header .header-1 .search-form label:hover {
+    color: var(--orange);
+}
+
+.header .header-1 .icons div,
+.header .header-1 .icons a {
+    font-size: 2.5rem;
+    margin-left: 0.6rem;
+    color: var(--black);
+    cursor: pointer;
+}
+
+.header .header-1 .icons div:hover,
+.header .header-1 .icons a:hover {
+    color: #fff;
+}
+
+.header .header-1 .icons #login-btn:hover .login-options {
+    display: flex;
+    flex-direction: column;
+}
+
+.header .header-1 .icons #login-btn .login-options {
+    display: none;
+    position: absolute;
+    right: 100px;
+    background: #fff;
+    border: var(--border);
+    border-radius: .5rem;
+    padding: 2rem;
+    box-shadow: var(--box-shadow);
+    min-width: 200px;
+    min-height: 200px;
+    z-index: 1000;
+}
+
+.header .header-1 .icons #login-btn .login-options a {
+    /* display: block; */
+    color: var(--black);
+    font-size: 2rem;
+    padding: 2rem .5rem;
+    transition: all 0.2s ease;
+}
+
+.header .header-1 .icons #login-btn .login-options a:hover {
+    color: var(--orange);
+}
+
+.header .header-1 .icons #login-btn .login-options a i {
+    margin-right: 1rem;
+    font-size: 2rem;
+    color: var(--black);
+}
+
+#search-btn {
+    display: none;
+}
+
+.search-form {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-form input[type="search"] {
+    width: 100%;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#search-btn-icon {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    color: #333;
+    font-size: 18px;
+}
+
+#search-btn-icon:hover {
+    color: var(--orange);
+}
+
+.header .header-2 {
+    background: #eeeeee;
+}
+
+.header .header-2.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header .header-2 {
+    display: block;
+    width: 100%;
+    position: relative;
+    z-index: 99;
+}
+
+
+.header .header-2 .item-center {
+    text-align: center;
+    flex: 0 0 66%;
+}
+
+.header .header-2 .menu > ul > li {
+    display: inline-block;
+    line-height: 50px;
+    margin-left: 25px;
+}
+
+.header .header-2 .menu > ul > li > a {
+    font-size: 15px;
+    font-weight: 500;
+    color: #000000;
+    position: relative;
+    text-transform: capitalize;
+    transition: color 0.3s ease;
+}
+
+.header .header-2 .menu > ul > li .sub-menu {
+    position: absolute;
+    z-index: 500;
+    background-color: #ffffff;
+    box-shadow: -2px 2px 70px -25px rgba(0, 0, 0, 0.3);
+    padding: 20px 30px;
+    transition: all 0.5s ease;
+    margin-top: 25px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+@media (min-width: 992px) {
+    .header .header-2 .menu > ul > li.menu-item-has-children:hover .sub-menu {
+        margin-top: 0;
+        visibility: visible;
+        opacity: 1;
+    }
+
+}
+
+.header .header-2 .menu > ul > li .sub-menu > ul > li {
+    line-height: 1;
+}
+
+.header .header-2 .menu > ul > li .sub-menu > ul > li > a {
+    display: inline-block;
+    padding: 10px 0;
+    font-size: 15px;
+    color: #555555;
+    transition: color 0.3s ease;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.header .header-2 .menu > ul > li .single-column-menu {
+    min-width: 280px;
+    max-width: 350px;
+}
+
+.header .header-2 .menu > ul > li .sub-menu.mega-menu > .list-item > ul > li {
+    line-height: 1;
+    display: block;
+}
+
+.header .header-2 .menu > ul > li .sub-menu.mega-menu > .list-item > ul > li > a {
+    padding: 10px 0;
+    display: inline-block;
+    font-size: 15px;
+    color: #555555;
+    transition: color 0.3s ease;
+}
+
+.header .header-2 .menu > ul > li .sub-menu.mega-menu {
+    left: 61%;
+    transform: translateX(-50%);
+}
+
+.header .header-2 .menu > ul > li .sub-menu.mega-menu-column-4 {
+    max-width: 800px;
+    width: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 15px;
+}
+
+.header .header-2 .menu > ul > li .sub-menu.mega-menu-column-4 > .list-item {
+    flex: 0 0 25%;
+    padding: 0 15px;
+}
+
+.header .header-2 .menu > ul > li .sub-menu.mega-menu-column-4 > .list-item .title {
+    font-size: 16px;
+    color: var(--orange);
+    font-weight: 500;
+    line-height: 1;
+    padding: 10px 0;
+}
+
+.header .header-2 .menu > ul > li .sub-menu.mega-menu-column-4 > .list-item.text-center .title {
+    text-align: center;
+}
+
+.header .header-2 .menu > ul > li .sub-menu.mega-menu > .list-item > ul > li > a:hover,
+.header .header-2 .menu > ul > li .sub-menu > ul > li > a:hover,
+.header .header-2 .menu > ul > li:hover > a {
+    color: var(--dark-color);
+}
+
+/* menu end */
+
+.bottom-navbar {
+    text-align: center;
+    background: var(--orange);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: none;
+}
+
+.bottom-navbar a {
+    font-size: 2.5rem;
+    padding: 2rem;
+    color: #fff;
+}
+
+
+/* Media queries */
+
+@media (max-width: 991px) {
+
+    html {
+        font-size: 55%;
+    }
+
+    .header .header-1 {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+    html {
+        scroll-padding-top: 0;
+    }
+
+    body {
+        padding-bottom: 6rem;
+    }
+
+    .header .header-2 {
+        display: none;
+    }
+
+    .bottom-navbar {
+        display: block;
+    }
+
+    #search-btn {
+        display: inline-block;
+    }
+
+    .header .header-1 {
+        box-shadow: var(--box-shadow);
+        position: relative;
+    }
+
+    .header .header-1 .search-form {
+        position: absolute;
+        top: -115%;
+        right: 2rem;
+        width: 90%;
+        box-shadow: var(--box-shadow);
+    }
+
+    .header .header-1 .search-form.active {
+        top: 115%;
+    }
+
+}
+
+@media (max-width: 450px) {
+
+    html {
+        font-size: 50%;
+    }
+
+}
+
+
+
+.login-btn-container {
+    display: inline-block;
+    margin-right: 10px; /* Adjust as needed */
+    border: 1px solid #ccc; /* Border style and color */
+    border-radius: 5px; /* Rounded corners */
+    padding: 5px 10px; /* Padding for the container */
+}
+
+.login-btn {
+    text-decoration: none;
+    color: #333; /* Text color */
+}
+
+
+.header .icons {
+    display: flex;
+    align-items: center;
+}
+
+.header .icons a,
+.header .icons .fas,
+.header .login-btn-container {
+    margin-left: 100px; /* Adjust margin as needed */
+    color: #333;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.header .login-btn {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #333;
+}

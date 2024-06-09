@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --orange: #ff7800;
+    --black: #130f40;
+    --light-color: #666;
+    --box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+    --border: .2rem solid rgba(0, 0, 0, .1);
+    --outline: .1rem solid rgba(0, 0, 0, .1);
+    --outline-hover: .1rem solid var(--black);
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all .2s linear;
+}
+
+body {
+  background-color: #eeeeee;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.sidebar {
+  width: 200px;
+  height: 100vh;
+  background: #c1c0c0;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar ul li {
+  font-size: 15px;
+  padding: 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.sidebar ul li a {
+  color: black;
+  display: block;
+}
+
+.sidebar ul li i {
+  margin-right: 10px;
+}
+
+.sidebar ul li:hover {
+  background-color: var(--orange);
+}
+
+.sidebar ul li:hover a {
+  color: #fff;
+}
+
+.main_content {
+  width: 100%;
+}
+
+.main_content .header {
+  font-size: 20px;
+  padding: 12px;
+  background: #999696;
+  color: white;
+  text-align: left;
+}
+
+.table-container {
+  background: #eeeeee;
+  padding: 20px;
+  max-height: 660px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+}
+
+.table-container::-webkit-scrollbar {
+  display: none;
+}
+
+.review-table {
+  background: white;
+  width: calc(100% - 40px);
+  margin-left: 20px;
+  margin-right: 20px;
+  border-collapse: collapse;
+}
+
+.review-table th,
+.review-table td {
+  padding: 10px;
+  text-align: left;
+  border: none;
+}
+
+.review-table thead th {
+  text-align: center;
+  font-size: 15px;
+  background-color: #f2f2f2;
+  border-bottom: 2px solid #ddd;
+}
+
+.review-table tbody tr {
+  border-bottom: 1px solid #ddd;
+}
+
+.review-table tbody tr td {
+  font-size: 15px;
+  padding: 10px;
+  text-align: center;
+  border: none;
+}
+
+.img-container {
+  width: 150px;
+  height: auto;
+}
+
+.img-container img {
+  width: 100%;
+  height: 100px;
+}
+
+.td-product-name {
+  font-size: 15px;
+  width: 280px;
+}
+
+.td-price {
+  width: 280px;
+}
+
+.td-actions {
+  width: 250px;
+}
+
+textarea {
+  width: 100%;
+  resize: none;
+  border: 1px solid #ddd;
+}
+
+.btn {
+  width: 90px;
+  padding: 5px 15px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-warning {
+  background-color: rgb(5, 33, 245);
+  color: #fff;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+
+.fa-star {
+  color: #ffc107 !important; /* Important to override any existing styles */
+}
+
+
+.edit-review-form .btn-primary,
+.edit-review-form .btn-secondary {
+    margin-right: 10px;
+    background-color: #007bff; /* Blue */
+    border-color: #007bff;
+    color: #fff; /* White text */
+}
+
+.edit-review-form .btn-primary:hover,
+.edit-review-form .btn-secondary:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    border-color: #0056b3;
+}
+
+.edit-review-form .btn-primary:focus,
+.edit-review-form .btn-secondary:focus {
+    box-shadow: none;
+}
+
+.edit-review-form .btn-secondary {
+    background-color: #6c757d; /* Gray */
+    border-color: #6c757d;
+}
+
+.edit-review-form .btn-secondary:hover {
+    background-color: #5a6268; /* Darker gray on hover */
+    border-color: #545b62;
+}

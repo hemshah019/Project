@@ -1,0 +1,120 @@
+body, h1, h2, h3, p, input {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+#usertype {
+    width: 300px;
+}
+.input_group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.input_group label {
+    font-size: 1.2em;
+}
+
+.form_container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex; 
+}
+
+.login {
+    display: flex;
+    flex-direction: row;
+}
+
+.image_container {
+    flex: 1;
+}
+
+.company_image {
+    width: 100%;
+    height: auto;
+}
+
+.form_content {
+    flex: 1; 
+    padding-left: 20px; 
+}
+
+.logo{
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+h1 {
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    color: #ff7800;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input_group {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 2px;
+}
+
+.input_group select {
+    width: calc(100% - 3px);
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: calc(100% - 25px); 
+}
+
+
+.form_btn {
+    background-color: black;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: calc(100% - 4px); 
+}
+
+.form_btn:hover {
+    background-color: #ff7800;
+}
+
+p {
+    text-align: left;
+    margin-top: 15px;
+    color: #333;
+}
+
+.form_container form p a {
+    color: #ff7800;
+}
+
+

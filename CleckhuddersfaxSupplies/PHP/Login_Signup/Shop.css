@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --orange: #ff7800;
+    --black: #130f40;
+    --light-color: #666;
+    --box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+    --border: .2rem solid rgba(0, 0, 0, .1);
+    --outline: .1rem solid rgba(0, 0, 0, .1);
+    --outline-hover: .1rem solid var(--black);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body, h1, h2, h3, p, input, select, label {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* body start */
+.container-add {
+    max-width: 800px;
+    margin: 50px auto;
+    display: flex;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+}
+
+.image_container {
+    flex: 1;
+}
+
+.company_image {
+    float: left;
+    margin-right: 10px;
+    width: 430px;
+    height: auto;
+    margin-top: 10px;
+}
+
+.signup {
+    flex: 1;
+    padding-left: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #ff7800;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text1"],
+input[type="tel"],
+input[type="email"],
+input[type="description"] {
+    width: 100%;
+    padding: 7px;
+    margin-bottom: 30px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+textarea#description {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 30px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.formh-group {
+    margin-bottom: 7px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.next {
+    background-color: black;
+    color: #fff;
+    border: var(--border);
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    width: 330px;
+    height: 40px;
+    margin-top: 10px;
+}
+
+.next:hover {
+    background: var(--orange);
+    transition: 0.8s;
+}
+
+/* body end */
+
+@media only screen and (max-width: 768px) {
+    .container-add {
+        flex-direction: column;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content img {
+        width: 80%;
+        margin: 20px 0;
+    }
+
+    input[type="text1"],
+    input[type="tel"],
+    input[type="email"],
+    textarea {
+        width: 100%;
+    }
+
+    .next {
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .container2 .col {
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    .container2 .row,
+    .container2 .row2 {
+        justify-content: center;
+    }
+}

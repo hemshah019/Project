@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --orange: #ff7800;
+  --black: #130f40;
+  --light-color: #666;
+  --box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+  --border: .2rem solid rgba(0, 0, 0, .1);
+  --outline: .1rem solid rgba(0, 0, 0, .1);
+  --outline-hover: .1rem solid var(--black);
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all .2s linear;
+}
+
+body {
+  background-color: #eeeeee;
+}
+
+.wrapper {
+  display: flex;
+  position: relative;
+}
+
+.sidebar {
+  width: 200px;
+  height: 800px;
+  background: #c1c0c0;
+}
+
+.sidebar ul li {
+  font-size: 15px;
+  padding: 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.sidebar ul li a {
+  color: black;
+  display: block;
+}
+
+.sidebar ul li i {
+  width: 25px;
+}
+
+.sidebar ul li:hover {
+  background-color: var(--orange);
+}
+
+.sidebar ul li:hover a {
+  color: #fff;
+}
+
+.main_content {
+  width: 100%;
+  background: #fff;
+  overflow-y: auto;
+  max-height: 800px; 
+}
+
+.main_content::-webkit-scrollbar {
+  display: none;
+}
+
+.main_content .hr {
+  font-size: 15px;
+  padding: 15px;
+  background: #999696;
+  color: White;
+  border-bottom: 1px solid #e0e4e8;
+}
+
+.order-container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  text-align: left;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+}
+
+.order-table {
+  font-size: 15px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.order-table th,
+.order-table td {
+  padding: 10px;
+  text-align: left;
+}
+
+.order-table thead th {
+  background-color: #f2f2f2;
+}
+
+.img-container {
+  width: 150px;
+  height: auto;
+}
+
+.img-container img {
+  width: 100%;
+  height: 100%;
+}
+
+.th-quantity,
+.td-quantity {
+  width: 80px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: right;
+}
+
+
+.order-details {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.order-details h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.order-details p {
+  margin-bottom: 5px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.order-table th,
+.order-table td {
+  padding: 8px;
+}
+
+.order-table th {
+  text-align: left;
+}
+
+.order-table td {
+  vertical-align: middle;
+}
+
+.buy-again-btn,
+.review-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.review-btn:hover {
+  filter: brightness(80%);
+
+}
+
+.buy-again-btn:hover {
+  filter: brightness(80%);
+}
+
+
+.buy-again-btn {
+  background-color: #4CAF50;
+}
+
+.total-price {
+  position: absolute;
+  bottom: 8px;
+  right: 150px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 80%;
+  width: 400px;
+  background-color: #ffffff;
+  /* White background */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  font-family: Arial, sans-serif;
+  /* Use a common font */
+  color: #333;
+  /* Dark text color */
+}
+
+.modal-content {
+  text-align: center;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+}
+
+.modal-title {
+  color: #333;
+  /* Dark text color */
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.review-form {
+  padding: 0 20px;
+}
+
+.rating-section {
+  margin-bottom: 20px;
+}
+
+.rating-section label {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.rating-stars i {
+  color: #ffc107;
+  /* Yellow color for filled stars */
+  font-size: 24px;
+  margin: 0 2px;
+  cursor: pointer;
+}
+
+.comment-section textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  font-size: 16px;
+}
+
+.submit-section input[type="submit"] {
+  background-color: #4caf50;
+  /* Green submit button */
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.submit-section input[type="submit"]:hover {
+  background-color: #45a049;
+  /* Darker green on hover */
+}

@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333;
+    border-bottom: 2px solid #333;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 50px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.left-container, .right-container {
+    width: 48%;
+}
+
+.details-box, .product-box, .order-summary, .discount, .payment-details {
+    border: 1px solid #000000;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+
+}
+
+.product-box{
+    overflow-y: auto;
+    max-height: 495px;
+}
+
+.product-box::-webkit-scrollbar{
+    display: none;
+}
+
+.collection-slot{
+    border: 1px solid #000000;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.billing-details, .collection-slot {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus {
+    border-color: #007bff;
+}
+
+.product-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.product-item img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.product-details {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-Quan {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.product-Quan span {
+    margin-right: 5px;
+}
+
+.product-Quan::before {
+    font-weight: bold;
+}
+
+.product-info span {
+    margin-right: 10px;
+}
+
+.product-price span {
+    font-weight: bold;
+}
+
+.order-summary .summary-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.order-summary .summary-item.total {
+    font-weight: bold;
+}
+
+.paypal-option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.paypal-logo {
+    height: 150px;
+    width: 250px;
+    vertical-align: middle;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: black;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff7800;
+}

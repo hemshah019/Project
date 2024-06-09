@@ -1,0 +1,251 @@
+.container {
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.text-bold {
+    font-weight: 800;
+}
+
+.main-img img {
+    height: 350px;
+    width: 500px;
+}
+
+.main-description .product-title {
+    font-size: 2.5rem;
+}
+
+.new-price {
+    font-size: 2rem;
+}
+
+.description {
+    font-size: 2rem;
+}
+
+.product-detail p {
+    font-size: 1.3rem;
+}
+
+.buttons .block {
+    margin-right: 5px;
+}
+
+.custom-btn {
+    text-transform: capitalize;
+    color: white;
+    width: 150px;
+    height: 40px;
+    border-radius: 0;
+}
+
+.custom-btn:hover {
+    background-color: #5271ff !important;
+    font-size: 18px;
+    color: white !important;
+}
+
+.review ul {
+    list-style: none;
+    padding: 0;
+    align-items: center;
+}
+
+.review ul li {
+    width: fit-content;
+    margin-bottom: 0.8rem;
+}
+
+.review ul li:nth-child(1n+3){
+    max-height: 0;
+    opacity: 0;
+    transition: 0.2s ease-in;
+    margin-bottom: 2rem;
+}
+
+.review .btn_a {
+    background: rgb(33, 32, 32);
+    color: #fff;
+    cursor: pointer;
+    float: right;
+    text-align: center;
+    font-weight: 600;
+    width: 150px;
+    line-height: 40px;
+    border-radius: 50px;
+    position: relative;
+    z-index: 1;
+}
+
+.review .btn_a:hover{
+    background: grey;
+    color: #fff;
+}
+
+.review .btn_a .btn2 {
+    display: none;
+}
+
+.review #btnBox {
+    display: none;
+}
+
+.review #btnBox:checked~ul li:nth-child(1n+3){
+    max-height: 900px;
+    opacity: 1;
+    transition: 0.2s ease-in; 
+}
+
+.review #btnBox:checked~.btn_a .btn2 {
+    display: block;
+}
+
+.review #btnBox:checked~.btn_a .btn1 {
+    display: none;
+}
+
+.rev {
+    background-color: #F4F4F5;
+    border-radius: 1.2rem;
+    padding: 1rem;
+}
+
+.rev .pname {
+    margin-bottom: 0px;
+    font-size: 20px;
+}
+
+.rev .rev_date{
+    margin-bottom: 0px;
+    margin-top: 4px;
+}
+
+.rev .name_date{
+    display: flex;
+    justify-content: space-between;
+}
+
+.similar-product img {
+    height: 200px;
+    width: 175px;
+}
+
+
+
+.similar-product {
+    text-align: center;
+    overflow: hidden;
+    border: 1px solid gray;
+    border-radius: 1.5rem;
+}
+
+.similar-product .title {
+    margin: 17px 0px 4px 0px;
+    font-size: 20px;
+}
+
+.similar-product .price {
+    font-weight: bold;
+}
+
+.btn-outline-primary,
+.btn-dark {
+    width: 225px;
+    border-radius: 60px !important;
+}
+
+.btn-outline-primary:hover {
+    background-color: #5271ff !important;
+}
+
+.container a {
+    color: black !important;
+    text-decoration: none;
+}
+
+a:hover {
+    color: black !important;
+    text-decoration: none !important;
+    opacity: 0.7 !important;
+}
+
+/* Add the CSS rule for fa-star */
+.fa-star {
+    color: #ffc107 !important; /* Important to override any existing styles */
+}
+
+/* Other CSS rules remain unchanged */
+.container {
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Remaining CSS rules... */
+
+.scrollable-row {
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch; /* For smooth scrolling on iOS */
+}
+
+.scrollable-row .row {
+    display: inline-flex;
+}
+
+
+
+.heading {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 2em;
+    color: #333;
+}
+
+.more-link {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-weight: bold;
+}
+
+.more-link:hover {
+    color: #0056b3;
+}
+
+
+
+/* See more products */
+
+.container .custom-heading a {
+    color: #ff6600 !important;
+    text-decoration: none;
+}
+
+.container .custom-heading {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 2em;
+    color: #333;
+    margin: 20px 0; /* Add some margin for better spacing */
+}
+
+.container .custom-heading .more-link {
+    color: #ff6600;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-weight: bold;
+}
+
+.container .custom-heading .more-link:hover {
+    color: #cc5200;
+}

@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --orange: #ff7800;
+    --black: #130f40;
+    --light-color: #666;
+    --box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+    --border: .2rem solid rgba(0, 0, 0, .1);
+    --outline: .1rem solid rgba(0, 0, 0, .1);
+    --outline-hover: .1rem solid var(--black);
+}
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+body {
+    background-color: #eeeeee;
+}
+
+.wrapper {
+    display: flex;
+    position: relative;
+}
+
+.sidebar {
+    width: 200px;
+    height: 800px;
+    background: #c1c0c0;
+}
+
+.sidebar ul li {
+    font-size: 15px;
+    padding: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.sidebar ul li a {
+    color: black;
+    display: block;
+}
+
+.sidebar ul li i {
+    width: 25px;
+}
+
+.sidebar ul li:hover {
+    background-color: var(--orange);
+}
+
+.sidebar ul li:hover a {
+    color: #fff;
+}
+
+.main_content {
+    width: calc(100% - 300px); /* Adjusted width to accommodate sidebar */
+    padding-left: 20px; /* Added padding to separate content from sidebar */
+}
+
+.main_content .he {
+    font-size: 15px;
+    padding: 15px;
+    background: #999696;
+    color: White;
+    border-bottom: 1px solid #e0e4e8;
+}
+
+.profile-content {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between; /* Added to space elements evenly */
+    align-items: flex-start; /* Align items to the start of the container */
+}
+
+
+.but {
+    background-color: #4CAF50; /* Button background color */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 0; /* Adjust margin */
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Add transition for smoother hover effect */
+}
+
+.but:hover {
+    background-color: #45a049; /* Darken background color on hover */
+}
+
+
+.profile-container {
+    max-width: 100%;
+    flex-basis: 100%; /* Ensure container takes full width */
+    padding: 20px;
+    text-align: left;
+}
+
+.profile-container h2 {
+    font-size: 24px; /* Slightly increased font size */
+    margin-bottom: 20px; /* Reduced margin for better spacing */
+    color: #333;
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap; /* Added to wrap elements on smaller screens */
+    gap: 20px; /* Added gap between form elements */
+}
+
+.form-group {
+    flex: 0 1 48%; /* Adjusted width for better spacing */
+}
+
+.form-group.full-width {
+    flex-basis: 100%; /* Ensure full width on smaller screens */
+}
+
+.form-group label {
+    font-size: 18px; /* Reduced font size for better fit */
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 10px; /* Reduced padding for better fit */
+    margin-bottom: 20px; /* Adjusted margin for better spacing */
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px; /* Increased font size for better readability */
+    box-sizing: border-box;
+}
+
+.password-wrapper {
+    position: relative;
+}
+
+.password-wrapper input[type="password"],
+.password-wrapper input[type="text"] {
+    width: calc(100% - 30px);
+    padding-right: 30px;
+}
+
+.password-wrapper .fa-eye,
+.password-wrapper .fa-eye-slash {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.button-group {
+    background-color:
+    black;
+    color: white;
+    height: 35px;
+    width: 140px;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Added transition for smoother hover effect */
+}
+
+.button-group:hover {
+    background-color: #333; /* Darken background color on hover */
+}
+
+.button-group:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+
+
+.but {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Personal Information */
+.personal-info {
+    margin-left: 20px; /* Adjust margin as needed */
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-row {
+    margin-bottom: 15px;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.password-wrapper {
+    position: relative;
+}
+
+.password-wrapper i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.button-group {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.button-group:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+
+.profile-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px; /* Add margin to separate from the profile container */
+}
+
+.profile-image img {
+    width: 200px; /* Set width of the image */
+    height: auto; /* Maintain aspect ratio */
+    border: 2px solid #666; /* Add border */
+    border-radius: 10px; /* Add border-radius for rounded corners */
+    padding: 10px; /* Add padding inside the box */
+}
+
+
+

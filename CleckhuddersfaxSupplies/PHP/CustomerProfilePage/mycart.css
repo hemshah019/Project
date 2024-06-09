@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all .2s linear;
+}
+
+body {
+    background-color: #fff;
+}
+
+.wrapper {
+    display: flex;
+}
+
+.sidebar {
+    width: 200px;
+    height: 100vh;
+    background: #c1c0c0;
+    padding-top: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    font-size: 15px;
+    padding: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.sidebar ul li a {
+    color: black;
+    display: block;
+}
+
+.sidebar ul li i {
+    margin-right: 10px;
+}
+
+.sidebar ul li:hover {
+    background-color: #ff523b;
+}
+
+.sidebar ul li:hover a {
+    color: #fff;
+}
+
+.small-container {
+    flex: 1;
+    padding: 20px;
+}
+
+.hed {
+    font-size: 20px;
+    padding: 15px;
+    background: #999696;
+    color: white;
+    text-align: left;
+    margin-bottom: 2px;
+}
+
+.cart-page {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #e0e4e8;
+    border-radius: 10px;
+}
+
+.cart-contain {
+    width: 100%;
+    overflow-y: auto;
+    max-height: 600px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.cart-info {
+    width: 190px;
+    display: flex;
+    align-items: center;
+}
+
+th, td {
+    width: 100px;
+    text-align: left;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+
+.larger-font {
+    font-size: 14px;
+}
+
+
+th {
+    background: #ff523b;
+    color: #fff;
+    font-weight: normal;
+}
+
+td img {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+
+td input {
+    width: 50px;
+    height: 30px;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    display: inline-block; 
+
+}
+
+
+td a {
+    color: #ff523b;
+    font-size: 14px;
+}
+
+.total-price {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.total-price table {
+    border-top: 3px solid #ff523b;
+    width: 100%;
+    max-width: 400px;
+    font-size: 20px;
+}
+
+td:last-child {
+    text-align: right;
+}
+
+th:last-child {
+    text-align: right;
+}
+
+.checkout-button {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.checkout-button .btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.checkout-button .btn:hover {
+    background-color: #45a049;
+}
+#removeForm button {
+    margin-top: 10px;
+    background-color: #ff0000; /* Red background */
+    color: #ffffff; /* White text */
+    padding: 1px 2px; /* Padding */
+    border: none; /* No border */
+    cursor: pointer; /* Cursor style */
+    border-radius: 4px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+#removeForm button:hover {
+    background-color: #cc0000; /* Darker red on hover */
+}

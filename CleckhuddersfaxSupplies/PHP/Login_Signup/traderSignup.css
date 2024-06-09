@@ -1,0 +1,196 @@
+body, h1, h2, h3, p, input, select, label {
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   font-family: Arial, sans-serif;
+   background-color: #f4f4f4;
+}
+
+.form_container {
+   max-width: 400px;
+   margin: 50px auto;
+   background-color: #fff;
+   padding: 20px;
+   border-radius: 8px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form_container {
+    max-width: 800px;
+    margin: 50px auto;
+    display: flex;
+}
+
+.signup {
+    display: flex;
+    flex-direction: row;
+}
+
+.image_container {
+    flex: 1;
+}
+
+
+.form_content {
+    flex: 1;
+    padding-left: 20px; 
+}
+
+.company_image {
+    float: left;
+    margin-right: 10px;
+    width: 430px;
+    height: auto;
+    margin-top: 10px;
+}
+
+h1 {
+   margin-bottom: 20px;
+   color: #ff7800;
+}
+
+form {
+   display: flex;
+   flex-direction: column;
+}
+
+.input-group input {
+    flex: 1; 
+    margin-right: 5px;
+}
+
+.input-group input:last-child {
+    margin-right: 0; 
+}
+
+
+input, select {
+   margin-bottom: 15px;
+   padding: 10px;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   width: calc(100% - 22px); 
+}
+
+
+label {
+   display: block;
+   margin-bottom: 1px;
+   color: #333;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+ }
+ 
+ .checkbox-container input {
+    margin-right: -150px;
+    margin-left: -150px;
+ }
+
+ .checkbox-container label{
+    margin-bottom: 15px;
+ }
+ .checkbox-container label a{
+    color:#ff7800;
+ }
+
+.form_btn {
+    background-color: black;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: calc(100% - 2px); 
+    margin-bottom: 10px;
+}
+
+.form_btn:hover {
+    background-color: #ff7800;
+}
+
+p {
+   text-align: left;
+   margin-bottom: 10px;
+   color: #333;
+}
+
+.form_container form p a{
+   color:#ff7800;
+}
+
+.input-group {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 2px;
+}
+
+.input-group input,
+.input-group select {
+    width: calc(50% - 6px); 
+    margin-right: 12px;
+}
+
+.input-group select {
+    margin-left: 0;
+}
+
+.input-group input:last-child,
+.input-group select:last-child {
+    margin-right: 0;
+}
+
+p{
+    padding-top: 10px;
+    display: block;
+    text-align: left;
+    font-size: 15px;
+    color: black;
+    text-decoration: none;
+    margin-left: 32px;
+  }
+  p a{
+    color: var(--orange);
+    text-decoration: underline;
+  }
+  
+
+
+  
+.alert-container {
+   position: fixed;
+   top: 20px;
+   right: 20px;
+   z-index: 1000;
+   animation: slideIn 0.5s forwards, fadeOut 10s forwards;
+   opacity: 0; 
+}
+
+@keyframes slideIn {
+   from {
+       transform: translateX(100%);
+   }
+   to {
+       transform: translateX(0);
+   }
+}
+
+@keyframes fadeOut {
+   from {
+       opacity: 1;
+   }
+   to {
+       opacity: 0;
+   }
+}
+
+.alert {
+   padding: 10px 20px;
+   border-radius: 5px;
+   background-color: #f44336;
+   color: white;
+}
